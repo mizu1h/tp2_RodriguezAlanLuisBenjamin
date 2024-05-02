@@ -4,12 +4,12 @@ public class Producto {
 	private String  codigo;
 	private String 	descripcion;
 	private double preciounidad;
-	private Origenes origenFabricacion;
-	private Categorias categoria;
-	public enum Origenes{
+	private Origen origenFabricacion;
+	private Categoria categoria;
+	public enum Origen{
 		ARGENTINA,CHINA,BRASIL,URUGUAY;
 	}
-	public enum Categorias{
+	public enum Categoria{
 		TELEFONIA,INFORMATICA,ELECTRO_HOGAR,HERRAMIENTAS;
 	}
 	public String getCodigo() {
@@ -36,19 +36,19 @@ public class Producto {
 		this.preciounidad = preciounidad;
 	}
 
-	public Origenes getOrigenFabricacion() {
+	public Origen getOrigenFabricacion() {
 		return origenFabricacion;
 	}
 
-	public void setOrigenFabricacion(Origenes origenFabricacion) {
+	public void setOrigenFabricacion(Origen origenFabricacion) {
 		this.origenFabricacion = origenFabricacion;
 	}
 
-	public Categorias getCategoria() {
+	public Categoria getCategoria() {
 		return categoria;
 	}
 
-	public void setCategoria(Categorias categoria) {
+	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
 	
